@@ -21,9 +21,9 @@ and it's implemntation of decoupled CFI, SideCFI._
 │   └── streamcfi                # Example with StreamCFI enabled
 ├── sidecar-llvm                 # Modified LLVM source and related tools
 ├── sidecar-monitors             # Monitors for StreamCFI components
-│   └── streamcfi                # Monitor for SideCFI/StreamCFI
+│   └── streamcfi                # Monitor for StreamCFI/StreamCFI
 └── tools                        # Scripts and tools for setup and experiments
-    ├── gen_tp.sh                # Generate typemaps for SideCFI/StreamCFI
+    ├── gen_tp.sh                # Generate typemaps for StreamCFI/StreamCFI
     └── install.sh               # LLVM installation script
 ```
 
@@ -141,7 +141,7 @@ Multiple flags control the CFI instrumentation:
   ```
 
 **Typemap Requirement:**
-The SideCFI/StreamCFI monitor currently requires a typemap file containing metadata about the compiled binary's symbols. This can be produced by executing the script:
+The StreamCFI monitor currently requires a typemap file containing metadata about the compiled binary's symbols. This can be produced by executing the script:
 
 ```bash
 ./tools/gen_tp.sh <path/to/compiled/binary>
