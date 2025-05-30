@@ -21,7 +21,7 @@ and it's implemntation of decoupled CFI, SideCFI._
 │   └── streamcfi                # Example with StreamCFI enabled
 ├── sidecar-llvm                 # Modified LLVM source and related tools
 ├── sidecar-monitors             # Monitors for StreamCFI components
-│   └── streamcfi                # Monitor for StreamCFI/StreamCFI
+│   └── streamcfi                # Monitor for StreamCFI
 └── tools                        # Scripts and tools for setup and experiments
     ├── gen_tp.sh                # Generate typemaps for StreamCFI/StreamCFI
     └── install.sh               # LLVM installation script
